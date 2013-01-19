@@ -62,4 +62,5 @@ Generator.prototype.templateDefine = function templateDefine() {
     this.fileHeader = grunt.template.process(grunt.file.read(path.join(this.sourceRoot(), 'partials/fileHeader.js')), data);
 
     this._ = _;
+    this.template('app/js/define.js', path.join(this.path, this.className + '.js'));
 };
