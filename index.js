@@ -11,9 +11,8 @@ function Generator(args, options, config) {
     this.argument('name', {
         type: String,
         required: false,
-        defaults: 'app'
+        defaults: 'App'
     });
-    
     this.option('warn', {
         type: Boolean,
         defaults: false,
@@ -31,13 +30,13 @@ util.inherits(Generator, yeoman.generators.Base);
 
 Generator.prototype.askFor = function() {
     var dutymode = [
-        '                                           ',
-        '                                           ',
-        '  Zim: "I am going to attempt to lock you  ',
-        '        into duty mode with this behavioral',
-        '        modulator...what?"                 ',
-        '                                           ',
-        '  Gir: "Hehe...doodee."                    ',
+        // '                                           ',
+        // '                                           ',
+        // '  Zim: "I am going to attempt to lock you  ',
+        // '        into duty mode with this behavioral',
+        // '        modulator...what?"                 ',
+        // '                                           ',
+        // '  Gir: "Hehe...doodee."                    ',
         '                                           ',
         '                                           ',
         '                          .'+'$M'.red.bold+'              ',
@@ -88,7 +87,7 @@ Generator.prototype.askFor = function() {
         '               M?=M.   8??==               ',
         '              .M?=?    M??=M               ',
         '               M?=~M   M?MM~               ',
-        '                                           ',
+        // '                                           ',
         '                                           ',
         '                                           '
     ];
