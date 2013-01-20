@@ -1,7 +1,5 @@
 <%= fileHeader %>
 
-'use strict';
-
 define(
     [<% _.each(reqs, function(element, index, list) { %>
         '<%= element %>'<% if(index !== list.length - 1) { %>,<% } %>
